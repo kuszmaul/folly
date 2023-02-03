@@ -18,7 +18,7 @@
 
 #include "folly/Portability.h"
 #include "folly/functional/Invoke.h"
-#include <folly/lang/CustomizationPoint.h>
+#include "folly/lang/CustomizationPoint.h"
 
 namespace folly {
 

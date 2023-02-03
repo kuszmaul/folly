@@ -21,7 +21,7 @@
 #include <string>
 #include <type_traits>
 
-#include <folly/portability/SysTypes.h>
+#include "folly/portability/SysTypes.h"
 
 //  This header is intended to be extremely lightweight. In particular, the
 //  parallel private functions for wrapping vector file-io are in a separate

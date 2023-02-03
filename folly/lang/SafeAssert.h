@@ -19,10 +19,10 @@
 #include <cstdint>
 #include <utility>
 
-#include <folly/CppAttributes.h>
-#include <folly/Portability.h>
-#include <folly/Preprocessor.h>
-#include <folly/lang/CArray.h>
+#include "folly/CppAttributes.h"
+#include "folly/Portability.h"
+#include "folly/Preprocessor.h"
+#include "folly/lang/CArray.h"
 
 #define FOLLY_DETAIL_SAFE_CHECK_IMPL(d, p, u, expr, ...)                  \
   do {                                                                    \

@@ -19,9 +19,9 @@
 
 #pragma once
 
-#include <folly/Portability.h>
-#include <folly/lang/Bits.h>
-#include <folly/portability/Malloc.h>
+#include "folly/Portability.h"
+#include "folly/lang/Bits.h"
+#include "folly/portability/Malloc.h"
 
 #ifdef __BMI2__
 #include <immintrin.h>
@@ -46,8 +46,8 @@
 #endif
 #endif
 
-#include <folly/lang/Exception.h> /* nolint */
-#include <folly/memory/detail/MallocImpl.h> /* nolint */
+#include "folly/lang/Exception.h" /* nolint */
+#include "folly/memory/detail/MallocImpl.h" /* nolint */
 
 #include <cassert>
 #include <cstddef>
