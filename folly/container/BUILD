@@ -1,8 +1,12 @@
 cc_library(
     name = "container",
     hdrs = ["F14Set.h"],
-    deps = ["//folly:cportability", "//folly:portability", ":View"],
     visibility = ["//visibility:public"],
+    deps = [
+        ":View",
+        "//folly:cportability",
+        "//folly:portability",
+    ],
 )
 
 cc_library(
