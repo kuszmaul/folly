@@ -18,8 +18,8 @@
 
 #include <cstddef>
 
-#include <folly/CPortability.h>
-#include <folly/portability/Config.h>
+#include "folly/CPortability.h"
+#include "folly/portability/Config.h"
 
 #if defined(_MSC_VER)
 #define FOLLY_CPLUSPLUS _MSVC_LANG
