@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-#include <folly/detail/RangeSse42.h>
+#include "folly/detail/RangeSse42.h"
 
 #include <cassert>
 
-#include <folly/Portability.h>
+#include "folly/Portability.h"
 
 //  Essentially, two versions of this file: one with an SSE42 implementation
 //  and one with a fallback implementation. We determine which version to use by

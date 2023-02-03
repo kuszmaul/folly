@@ -31,13 +31,12 @@
 #include <initializer_list>
 #include <tuple>
 
+#include "folly/container/F14Set-fwd.h"
+#include "folly/container/detail/F14Policy.h"
+#include "folly/container/detail/F14Table.h"
+#include "folly/container/detail/Util.h"
 #include "folly/container/View.h"
-#include <folly/lang/SafeAssert.h>
-
-#include <folly/container/F14Set-fwd.h>
-#include <folly/container/detail/F14Policy.h>
-#include <folly/container/detail/F14Table.h>
-#include <folly/container/detail/Util.h>
+#include "folly/lang/SafeAssert.h"
 
 #if FOLLY_F14_VECTOR_INTRINSICS_AVAILABLE
 
@@ -1196,7 +1195,7 @@ class F14FastSet
 #endif // if FOLLY_F14_VECTOR_INTRINSICS_AVAILABLE
 
 //////// Compatibility for unsupported platforms (not x86_64 and not aarch64)
-#include <folly/container/detail/F14SetFallback.h>
+#include "folly/container/detail/F14SetFallback.h"
 
 namespace folly {
 namespace f14 {

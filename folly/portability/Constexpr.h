@@ -16,8 +16,8 @@
 
 #pragma once
 
-#include <folly/CPortability.h>
-#include <folly/Portability.h>
+#include "folly/CPortability.h"
+#include "folly/Portability.h"
 
 #include <cstdint>
 #include <cstring>

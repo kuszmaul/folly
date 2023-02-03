@@ -1,13 +1,24 @@
 cc_library(
-    name = "invoke",
+    name = "ApplyTuple",
+    hdrs = ["ApplyTuple.h"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//folly:Traits",
+        "//folly:Utility",
+        "//folly/functional:Invoke",
+    ],
+)
+
+cc_library(
+    name = "Invoke",
     hdrs = ["Invoke.h"],
     visibility = ["//visibility:public"],
     deps = [
-        "//folly:cppattributes",
-        "//folly:portability",
-        "//folly:preprocessor",
-        "//folly:traits",
-        "//folly:utility",
-        "//folly/lang:customizationpoint",
+        "//folly:CppAttributes",
+        "//folly:Portability",
+        "//folly:Preprocessor",
+        "//folly:Traits",
+        "//folly:Utility",
+        "//folly/lang:CustomizationPoint",
     ],
 )

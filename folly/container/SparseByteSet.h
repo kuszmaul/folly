@@ -19,7 +19,7 @@
 #include <cassert>
 #include <cstdint>
 
-#include <folly/CPortability.h>
+#include "folly/CPortability.h"
 
 namespace folly {
 
